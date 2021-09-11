@@ -1,1 +1,1 @@
-JavaScript snippets 
+JavaScript bits and pieces   
