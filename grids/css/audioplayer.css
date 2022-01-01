@@ -1,0 +1,40 @@
+
+
+.audio-player-info {
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+.audio-player-progressbar {
+  background-color: purple;
+  width: 100%;
+  height: 20px;
+}
+
+.audio-player-progressmeter {
+  background-color: hotpink;
+  height: 20px;
+}
+
+.audio-player {
+  height: 20px;
+  width: 100%;
+}
+
+.controls {
+  height: 20px;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 1em;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}

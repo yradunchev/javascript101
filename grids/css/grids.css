@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Ossem Regular';
+    src: url("../fonts/Ossem-Regular.otf") format('opentype');
+    font-style: normal;
+    font-display: fallback;
+}
+
+body {
+  font-family: Ossem Regular, Arial;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 22px 22px 22px 22px;
+  grid-template-columns: 115px 100vh;
+  gap: 1px;
+  background-color: rgba(255, 249, 222, 1);
+  border: 1px solid black;
+}
+
+.cover {
+  grid-column: 1;
+  grid-row: 1 / 6;
+  background-size: cover;
+}
+
+.cover img {
+  height: 114px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.podtitle {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  font-size: 14px;
+}
+
+.player {
+  grid-column: 2;
+  grid-row: 3 / 5;
+  font-size: 14px;
+}
+
+.footer {
+  grid-column: 2;
+  grid-row: 5;
+  text-align: center;
+  font-size: 12px;
+}
+
+.audio-player-info {
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+.audio-player-progressbar {
+  background-color: purple;
+  width: 100%;
+  height: 20px;
+}
+
+.audio-player-progressmeter {
+  background-color: hotpink;
+  height: 20px;
+}
+
+.audio-player {
+  height: 20px;
+  width: 100%;
+}
+
+.controls {
+  height: 20px;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 1em;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
