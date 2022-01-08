@@ -12,6 +12,8 @@ fetch("https://api.govorenefekt.bg/v1/podcasts/" + podcast_id)
 function appendData(data) {
   var page_title = "Визитка: "+ data[0].title
   document.title = page_title
+  date = data[0].first_release[0]
+  console.log(date.toLocaleString('bg-BG'))
   var mainContainer = document.getElementById("LastTen");
     var div = document.createElement("div");
     if (data[0].rssfeed) {
@@ -48,9 +50,9 @@ function appendData(data) {
       </tr>
       <tr>
       <tr>
-        <td style="text-align:center">Първи епизод: ${data[0].first_release[0]||"Няма данни"}</td>
+        <td style="text-align:center">Първи епизод: ${data[0].first_release[0].toLocaleString('bg-BG')||"Няма данни"}</td>
         <td style="text-align:center">Брой епизоди: ${data[0].episodes_count||"Няма данни"}</td>
-        <td style="text-align:center">Последен епизод: ${data[0].last_release[0]||"Няма данни"}</td>
+        <td style="text-align:center">Последен епизод: ${data[0].last_release[0].toLocaleString('bg-BG')||"Няма данни"}</td>
       </tr>
       <tr>
         <td colspan = 3 style="text-align:center">${cover}
