@@ -14,7 +14,7 @@ function appendData(data) {
     var div = document.createElement("div");
     var episode = `
     <table>
-      <caption><a href="https://podcastalot.com/info/?podcast_id=${data[i].podcast_id}">${data[i].podcast_name}</caption>
+      <caption>${data[i].podcast_name}</caption>
       <tr>
         <td colspan = 3 style="text-align:center">${data[i].title}</td>
       </tr>
@@ -25,7 +25,10 @@ function appendData(data) {
       </tr>
       <tr>
         <td colspan = 3>
-          <iframe src="https://podcastalot.com/playa/${data[i].geid}" height="50px" width="100%" style="width: 1px; min-width: 100%;" frameborder="0" scrolling="no" loading="lazy"></iframe>
+          <audio controls style="width: 100%;">
+            <source src="${data[i].audio}" type="audio/mpeg">
+            Вашuият браузър неподдържа audio елемент. <a href="${data[i].audio}">Кликнете тук за да чуете епизода</a>
+          </audio>
         </td>
       </tr>
     </table>
